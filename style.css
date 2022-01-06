@@ -20,9 +20,11 @@ ul > div {
     line-height: 2;
 }
 
-/* body{
-    background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%);
-} */
+body{
+    /* background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%); */
+    display: flex;
+    flex-direction: column;
+}
 
 .cabecalho{
     display: flex;
@@ -77,6 +79,49 @@ ul > div {
     justify-content: center;
     align-items: center;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100vh - 354px);
+    background-color: #3B4F66;
+    color: white;
+    font-family: 'Sarala', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    line-height: 2;
+}
+
+input {
+    padding: 5px;
+    border: black 1px;
+    width: 250px;
+}
+
+button {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background-color: #3B4F66;
+    border: solid #8DA37D;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #557497;
+}
+
+button:active {
+    color: #3B4F66;
+    background-color: #8DA37D;
+}
+
+#input-arquivo {
+    text-align: center;
+    padding: 0;
+}
+
 a {
     height: 32px;
     text-decoration: none;
@@ -111,4 +156,34 @@ footer {
 #img-logo {
     width: 125px;
     height: 125px;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 900px) {
+    .cabecalho {
+        position: static;
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    .cabecalho-menu {
+    }
+
+    form {
+        height: initial;
+        padding: 15px 0;
+    }
+
+    footer {
+        position: static;
+        flex-direction: column;
+    }
+
+    #img-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    #segundo-logo {
+        display: none;
+    }
 }
