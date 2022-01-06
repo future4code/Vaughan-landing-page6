@@ -18,6 +18,101 @@ ul > div {
     line-height: 2;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.container__left {
+    width: 25%;
+}
+
+.container__middle {
+    flex-grow: 1;
+}
+
+.container__right {
+    width: 20%;
+}
+
+body{
+    background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%);
+}
+
+.Logo-4safe{
+    width: 175px;
+    padding: 8px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    border-bottom: 0.4px solid white;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+}
+
+.cabecalho-itens1{
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-right: 10px;
+}
+.cabecalho-itens2{
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-right: 10px;
+}
+.cabecalho-itens3{
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container-man{
+    border-top: 0.4px solid white
+}
+
+.cabecalho-com-texto{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 a {
     height: 32px;
     text-decoration: none;
@@ -45,7 +140,6 @@ footer {
     padding: 15px 0;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    background: linear-gradient(1.25deg, #3B4F66 16.62%, #8DA37D 85.61%);
 }
 
 #img-logo {
