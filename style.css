@@ -1,25 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Poppins:wght@200&family=Rajdhani&family=Righteous&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Poppins:wght@200&family=Rajdhani&family=Righteous&family=Roboto:ital,wght@1,100&family=Sarala&display=swap');
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
-.container__main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-}
-.container__left {
-    width: 25%;
-}
-.container__middle {
-    flex-grow: 1;
-}
-.container__right {
-    width: 20%;
-}
-
 * {
     margin: 0;
     padding: 0;
