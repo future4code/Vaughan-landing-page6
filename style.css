@@ -8,41 +8,21 @@
     text-decoration: none;
 }
 
-.container {
+img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+ul > div {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    line-height: 2;
 }
 
-.container__main {
-    /* Take the remaining height */
-    flex-grow: 1;
-
-    /* Layout the left sidebar, main content and right sidebar */
-    display: flex;
-    flex-direction: row;
-}
-
-.container__left {
-    width: 25%;
-}
-
-.container__middle {
-    /* Take the remaining width */
-    flex-grow: 1;
-}
-
-.container__right {
-    width: 20%;
-}
-
-body{
+/* body{
     background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%);
-}
-
-.Logo-4safe{
-    width: 175px;
-    padding: 8px;
-}
+} */
 
 .cabecalho{
     display: flex;
@@ -51,6 +31,7 @@ body{
     justify-content: space-around;
     padding: 24px;
     border-bottom: 0.4px solid white;
+    background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%);
 }
 
 .cabecalho-menu{
@@ -83,22 +64,6 @@ body{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.container-man{
-    border-top: 0.4px solid white
-}
-
-.icone-home{
-    width: 30px;
-}
-
-.icone-seguro-de-vida{
-    width: 30px;
-}
-
-.icone-seguro-de-carro{
-    width: 30px;
-}
-
 .cabecalho-com-texto{
     display: flex;
     align-items: center;
@@ -119,9 +84,31 @@ a {
     display: flex;
     align-items: center;
 }
+
 a:hover {
     color: #8DA37D;
 }
+
 a:active {
     color: #3B4F66;
+}
+
+footer {
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 24px 0;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border-top: 0.4px solid white;
+    background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%);
+}
+
+#img-logo {
+    width: 125px;
+    height: 125px;
 }
