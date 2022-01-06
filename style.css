@@ -112,3 +112,41 @@ footer {
     width: 125px;
     height: 125px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 354px);
+    background-color: #3B4F66;
+    color: white;
+    font-family: 'Sarala', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    line-height: 2;
+}
+input {
+    padding: 1px;
+    border: black 1px;
+    width: 270px;
+}
+button {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background-color: #3B4F66;
+    border: solid #8DA37D;
+    width: 100px;
+    height: 30px;
+}
+button:hover {
+    background-color: #557497;
+}
+button:active {
+    color: #3B4F66;
+    background-color: #8DA37D;
+}
+
+#caixa-mensagem{
+    height: 500px;
+    margin-bottom: 10px;
+}
