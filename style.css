@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Poppins:wght@200&family=Rajdhani&family=Righteous&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Poppins:wght@200&family=Rajdhani&family=Righteous&family=Roboto:ital,wght@1,100&family=Sarala&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 20vh 35vh;
+    background-image: linear-gradient(1deg, #3B4F66, #8DA37D); 
+} */
+ .container__main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 20vh 35vh;
+    background-image: linear-gradient(1deg, #3B4F66, #8DA37D); 
+    
+    
+ }
+
+.textos1 {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    color: white;
+    margin-left: 80px;
+}
+
+.textos1 > h1 {
+    font-size:4vh;
+    margin-bottom: -200px
+}
+
+.textos1 > h2 {
+    font-size:1.5vh;
+    margin: 10px;
+    margin-top: 1px;
+}
+
+.ilustracao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#desenho {
+    width: 400px;
+    height: 400px;
+    padding-top: 80px;
+}
+
+.descricao {
+    display: inline;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.iconesServicos {
+    display: grid;
+    grid-column: 1 / 3
+}
+
+ .iconesServicos > h3 {
+    display: grid;
+    align-items: center;
+    color: white;
+    font-size: 2vh;
+    margin: 10px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.iconesServicos > h4 {
+    display: grid;
+    align-items: center;
+    color: white;
+    font-size: 1.5vh;
+    margin: 10px;
+    margin-top: 1px;
+    text-align: center;
+
+} 
+
+.iconesServicos2 {
+
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    justify-items: center;
+
+}
+
+
+.iconesServicos2 > #vida {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    justify-items: center;
+    width: 250px;
+}
+.iconesServicos2 > #carro {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    justify-items: center;
+    width: 250px;
+}
+
+.textos1 > button {
+
+    box-shadow: 1px 3px 0px 0px #3B4F66;
+    background-color:#3B4F66;
+    border-radius:25px;
+    display:inline-block;
+    color:#ffffff;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+    font-size:15px;
+    padding:17px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+    
+}
+    .textos1 > button:hover {
+        background-color:#8DA37D;
+}
+    .textos1 > button:active {
+        position:relative;
+        top:1px;
+}
+
