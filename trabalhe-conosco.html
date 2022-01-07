@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Contato</title>
+    <title>Trabalhe Conosco</title>
 </head>
 <body>
     <header class="cabecalho">
@@ -17,7 +17,7 @@
         <nav class="cabecalho-menu">
             <div class="container">
                 <img class="icone-home" src="./Imagens/iconmonstr-home-9-240.png" alt="icone de casinha">
-                <a href="index.html"class="cabecalho-itens1"><h3>Página Inicial</h3></a>
+                <a class="cabecalho-itens1"><h3>Página Inicial</h3></a>
             </div>
             <div class="container">
                 <img class="icone-seguro-de-vida" src="./Imagens/iconmonstr-user-25.svg" alt="seguro de vida">
@@ -29,22 +29,19 @@
             </div>
         </nav>
     </header>
-    <main class="background">
-        <form>
-            <label id="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
-            <label id="email">E-mail</label>
-            <input type="email" id="email" name="email">
-            <label id="telefone">Telefone</label>
-            <input type="telefone" id="telefone" name="telefone">
-            <label id="mensagem">Mensagem</label>
-            <input type="msg" id="caixa-mensagem" name="mensagem"></input>
-            <button id="tamanho-botao">Enviar</button>
-            <br>
+    
+    <form>
+        <label id="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <label id="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com.br">
+        <label id="anexar-arquivo">Currículo</label>
+        <input id="input-arquivo" type="file" id="anexar-arquivo" name="anexar-arquivo"> </input>
+        <button type="submit" id="anexar-arquivo" name="botao-enviar">Enviar</button>
     </form>
-</main>
+
     <footer>
-        <div>
+        <div id="segundo-logo">
             <img id="img-logo" src="img/contornoBranco.png" alt="Logo-4Safe">
         </div>
         <div>
