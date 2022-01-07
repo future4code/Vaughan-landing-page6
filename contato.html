@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - 4Safe</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contato</title>
 </head>
-
 <body>
     <header class="cabecalho">
         <div class="cabecalho-com-texto">
@@ -18,7 +17,7 @@
         <nav class="cabecalho-menu">
             <div class="container">
                 <img class="icone-home" src="./Imagens/iconmonstr-home-9-240.png" alt="icone de casinha">
-                <a class="cabecalho-itens1"><h3>Página Inicial</h3></a>
+                <a  href="index.html" class="cabecalho-itens1"><h3>Página Inicial</h3></a>
             </div>
             <div class="container">
                 <img class="icone-seguro-de-vida" src="./Imagens/iconmonstr-user-25.svg" alt="seguro de vida">
@@ -30,52 +29,24 @@
             </div>
         </nav>
     </header>
-
-    <main class="container__main">
-        <div class="textos1">
-
-            <h1> 4SAFE </h1>
-
-            <h2>Somos uma empresa focada na digitalização dos produtos de seguridade.
-                Sua proposta é oferecer seguros de vida,
-                de carro e outros para clientes jovens
-                que não gostam da burocracia das
-                seguradoras tradicionais.</h2>
-
-                <button> Faça uma simulação </button>
-
-        </div>
-            
-        <div class="ilustracao">
-             <img src="img/Layout.png" id="desenho" alt="Ilustração representando seguro de vida e automóveis">
-
-        </div>   
-        
-        <div class="iconesServicos">
-
-            <h3> O que fazemos por você? </h3>
-            <h4> Queremos que você tenha a certeza de que tudo vai dar certo, exatamente como planejou.
-                Por isso, nossas soluções podem ser personalizadas de acordo com suas necessidades, com coberturas diferenciadas que podem ser utilizadas em vida.
-                Proteja o que é mais importante para você.
-                Queremos te ajudar a encontrar o seguro ideal para suas necessidades. </h4>
-        
-        </div>
-            
-        <div class="iconesServicos2">
-            
-            <img src="img/maoVida.png" id="vida" alt="Mão aparando um simbolo que representa a vida">
-            <img src="img/maoCarro.png" id="carro" alt="Mão aparando o simbolo de um carro">
     
-        </div>
-
-
-    </main>
+    <form id="container-contato">
+        <label id="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+        <label id="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <label id="telefone">Telefone</label>
+        <input type="telefone" id="telefone" name="telefone">
+        <label id="mensagem">Mensagem</label>
+        <input type="msg" id="caixa-mensagem" name="mensagem"></input>
+        <button id="tamanho-botao">Enviar</button>
+    
+    </form>
 
     <footer>
         <div id="segundo-logo">
             <img id="img-logo" src="img/contornoBranco.png" alt="Logo-4Safe">
         </div>
-
         <div>
         <h3>Contato</h3>
         <ul>
@@ -86,6 +57,14 @@
             <div>
                 <img src="img/email.svg" alt="E-mail">
                 <p>E-mail: contato@4safe.com.br</p>
+            </div>
+            <div>
+                <img src="img/trabalhe-conosco.svg" alt="Edificio">
+                <a href="trabalhe-conosco.html"><p>Trabalhe Conosco</p></a>
+            </div>
+            <div>
+                <img src="img/fale-conosco.svg" alt="Balão-de-fala">
+                <a href="contato.html">Fale Conosco</a>
             </div>
         </ul>
         </div>
