@@ -20,12 +20,6 @@ ul > div {
     line-height: 2;
 }
 
-body{
-    /* background: linear-gradient(1.25deg, #3B4F66 10.62%, #8DA37D 85.61%); */
-    display: flex;
-    flex-direction: column;
-}
-
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -49,6 +43,7 @@ body{
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin-right: 10px;
+    text-align: center;
 }
 .cabecalho-itens2{
     font-family: 'Sarala', sans-serif;
@@ -57,6 +52,7 @@ body{
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin-right: 10px;
+    text-align: center;
 }
 .cabecalho-itens3{
     font-family: 'Sarala', sans-serif;
@@ -64,6 +60,7 @@ body{
     font-weight: 400;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
 }
 
 .cabecalho-com-texto{
@@ -142,10 +139,6 @@ footer {
     font-family: 'Sarala', sans-serif;
     display: flex;
     justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     padding: 24px 0;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
@@ -158,43 +151,12 @@ footer {
     height: 125px;
 }
 
-@media screen and (min-device-width: 375px) and (max-device-width: 900px) {
-    .cabecalho {
-        position: static;
-        flex-direction: column;
-        height: 30vh;
-    }
-
-    /* .cabecalho-menu {
-    } */
-
-    form {
-        height: initial;
-        padding: 15px 0;
-    }
-
-    footer {
-        position: static;
-        flex-direction: column;
-    }
-
-    #img-logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    #segundo-logo {
-        display: none;
-    }
-}
-
 .container__main {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 45vh 20vh 35vh;
     background-image: linear-gradient(1deg, #3B4F66, #8DA37D); 
-    
     
  }
 
@@ -262,7 +224,6 @@ footer {
 } 
 
 .iconesServicos2 {
-
     display: grid;
     grid-row: 3 / 4;
     grid-column: 1 / 4;
@@ -270,20 +231,22 @@ footer {
 
 }
 
-
 .iconesServicos2 > #vida {
     display: grid;
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     justify-items: center;
     width: 250px;
+    height: initial;
 }
+
 .iconesServicos2 > #carro {
     display: grid;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     justify-items: center;
     width: 250px;
+    height: initial;
 }
 
 .textos1 > button {
@@ -301,10 +264,87 @@ footer {
     text-shadow:0px 1px 0px #000000;
     
 }
-    .textos1 > button:hover {
-        background-color:#8DA37D;
+
+.textos1 > button:hover {
+    background-color:#8DA37D;
 }
-    .textos1 > button:active {
-        position:relative;
-        top:1px;
+
+.textos1 > button:active {
+    position:relative;
+    top:1px;
+}
+
+#container-contato {
+    padding: 20px 0;
+}
+
+#caixa-mensagem{
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 900px) {
+    .cabecalho {
+        position: static;
+        flex-direction: column;
+        height: 30vh;
+        width: 100vw;
+    }
+    
+    .container__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconesServicos2 > #vida {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .iconesServicos2 > #carro {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ilustracao {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    ul {
+        margin-bottom: 15px;
+    }
+
+    .container__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        height: initial;
+        padding: 15px 0;
+        height: 300px;
+    }
+
+    footer {
+        position: static;
+        flex-direction: column;
+        width: 100vw;
+        padding-left: 50px;
+        padding-bottom: 0;
+    }
+
+    #img-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #segundo-logo {
+        display: none;
+    }
 }
